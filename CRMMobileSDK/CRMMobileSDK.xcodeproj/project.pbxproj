@@ -85,7 +85,8 @@
 		07F0B2BF1B4E485900213CA1 /* SOAPMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 07F0B2741B4E485900213CA1 /* SOAPMapper.h */; };
 		07F0B2C01B4E485900213CA1 /* SOAPMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F0B2751B4E485900213CA1 /* SOAPMapper.m */; };
 		07F0B2C11B4E485900213CA1 /* SOAPParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 07F0B2761B4E485900213CA1 /* SOAPParser.h */; };
-		B3609AE7324D1BA4AFC2067E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBBFEE0671167AE8BC4E98C /* libPods.a */; };
+		21B1B2DFCB6AE6985F9318EC /* libPods-CRMMobileSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 593C06BB50FF19DB376C0B1C /* libPods-CRMMobileSDK.a */; };
+		FBFA930172CBC14F475FC6B0 /* libPods-CRMMobileSDK-CRMMobileSDKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C0885651B66AC05F461A8B /* libPods-CRMMobileSDK-CRMMobileSDKTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,9 +181,12 @@
 		07F0B2741B4E485900213CA1 /* SOAPMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAPMapper.h; sourceTree = "<group>"; };
 		07F0B2751B4E485900213CA1 /* SOAPMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAPMapper.m; sourceTree = "<group>"; };
 		07F0B2761B4E485900213CA1 /* SOAPParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAPParser.h; sourceTree = "<group>"; };
-		3110B1357623E61A6A0B1FFD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		4801670C3408AE5406094208 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		BFBBFEE0671167AE8BC4E98C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BE513B9F7DB2C8F9EBC01A0 /* Pods-CRMMobileSDK-CRMMobileSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRMMobileSDK-CRMMobileSDKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CRMMobileSDK-CRMMobileSDKTests/Pods-CRMMobileSDK-CRMMobileSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		593C06BB50FF19DB376C0B1C /* libPods-CRMMobileSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CRMMobileSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70583899AA4DF7BB2D565D79 /* Pods-CRMMobileSDK-CRMMobileSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRMMobileSDK-CRMMobileSDKTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CRMMobileSDK-CRMMobileSDKTests/Pods-CRMMobileSDK-CRMMobileSDKTests.release.xcconfig"; sourceTree = "<group>"; };
+		74D4D4352B6F1347FC97F866 /* Pods-CRMMobileSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRMMobileSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-CRMMobileSDK/Pods-CRMMobileSDK.release.xcconfig"; sourceTree = "<group>"; };
+		B1E78616963A6ADA62C1FF34 /* Pods-CRMMobileSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRMMobileSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CRMMobileSDK/Pods-CRMMobileSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		E7C0885651B66AC05F461A8B /* libPods-CRMMobileSDK-CRMMobileSDKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CRMMobileSDK-CRMMobileSDKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +194,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3609AE7324D1BA4AFC2067E /* libPods.a in Frameworks */,
+				21B1B2DFCB6AE6985F9318EC /* libPods-CRMMobileSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07F0B2171B4E479B00213CA1 /* CRMMobileSDK.framework in Frameworks */,
+				FBFA930172CBC14F475FC6B0 /* libPods-CRMMobileSDK-CRMMobileSDKTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,8 +216,8 @@
 				07F0B20D1B4E479B00213CA1 /* CRMMobileSDK */,
 				07F0B21A1B4E479B00213CA1 /* CRMMobileSDKTests */,
 				07F0B20C1B4E479B00213CA1 /* Products */,
-				912085BE48B6CB55933E4C71 /* Pods */,
-				D01AE74EF4779A5D127EC7F3 /* Frameworks */,
+				AF925E942D0F849BA085FF04 /* Pods */,
+				D5EB0AEF07B9AEEC9B595B97 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -374,19 +379,22 @@
 			path = SOAP;
 			sourceTree = "<group>";
 		};
-		912085BE48B6CB55933E4C71 /* Pods */ = {
+		AF925E942D0F849BA085FF04 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3110B1357623E61A6A0B1FFD /* Pods.debug.xcconfig */,
-				4801670C3408AE5406094208 /* Pods.release.xcconfig */,
+				B1E78616963A6ADA62C1FF34 /* Pods-CRMMobileSDK.debug.xcconfig */,
+				74D4D4352B6F1347FC97F866 /* Pods-CRMMobileSDK.release.xcconfig */,
+				4BE513B9F7DB2C8F9EBC01A0 /* Pods-CRMMobileSDK-CRMMobileSDKTests.debug.xcconfig */,
+				70583899AA4DF7BB2D565D79 /* Pods-CRMMobileSDK-CRMMobileSDKTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		D01AE74EF4779A5D127EC7F3 /* Frameworks */ = {
+		D5EB0AEF07B9AEEC9B595B97 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BFBBFEE0671167AE8BC4E98C /* libPods.a */,
+				593C06BB50FF19DB376C0B1C /* libPods-CRMMobileSDK.a */,
+				E7C0885651B66AC05F461A8B /* libPods-CRMMobileSDK-CRMMobileSDKTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -449,12 +457,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07F0B2211B4E479B00213CA1 /* Build configuration list for PBXNativeTarget "CRMMobileSDK" */;
 			buildPhases = (
-				D2E751B82678652A76AC5C01 /* Check Pods Manifest.lock */,
+				1E18A9CE73A35AD03615FFC3 /* [CP] Check Pods Manifest.lock */,
 				07F0B2061B4E479B00213CA1 /* Sources */,
 				07F0B2071B4E479B00213CA1 /* Frameworks */,
 				07F0B2081B4E479B00213CA1 /* Headers */,
 				07F0B2091B4E479B00213CA1 /* Resources */,
-				012337739066BAD0A154F06F /* Copy Pods Resources */,
+				02989A6430FAE7F7EC8D1630 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -469,9 +477,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07F0B2241B4E479B00213CA1 /* Build configuration list for PBXNativeTarget "CRMMobileSDKTests" */;
 			buildPhases = (
+				F7DA28C97D7CA8E8CEBBC1CE /* [CP] Check Pods Manifest.lock */,
 				07F0B2121B4E479B00213CA1 /* Sources */,
 				07F0B2131B4E479B00213CA1 /* Frameworks */,
 				07F0B2141B4E479B00213CA1 /* Resources */,
+				915F645388F19180527399E2 /* [CP] Embed Pods Frameworks */,
+				38FC9328F33A0D792E4B1DB2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -536,34 +547,79 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		012337739066BAD0A154F06F /* Copy Pods Resources */ = {
+		02989A6430FAE7F7EC8D1630 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRMMobileSDK/Pods-CRMMobileSDK-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D2E751B82678652A76AC5C01 /* Check Pods Manifest.lock */ = {
+		1E18A9CE73A35AD03615FFC3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		38FC9328F33A0D792E4B1DB2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRMMobileSDK-CRMMobileSDKTests/Pods-CRMMobileSDK-CRMMobileSDKTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		915F645388F19180527399E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRMMobileSDK-CRMMobileSDKTests/Pods-CRMMobileSDK-CRMMobileSDKTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7DA28C97D7CA8E8CEBBC1CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -722,7 +778,7 @@
 		};
 		07F0B2221B4E479B00213CA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3110B1357623E61A6A0B1FFD /* Pods.debug.xcconfig */;
+			baseConfigurationReference = B1E78616963A6ADA62C1FF34 /* Pods-CRMMobileSDK.debug.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -737,7 +793,10 @@
 				INFOPLIST_FILE = CRMMobileSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = /usr/include/libxml2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/include/libxml2,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -745,7 +804,7 @@
 		};
 		07F0B2231B4E479B00213CA1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4801670C3408AE5406094208 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 74D4D4352B6F1347FC97F866 /* Pods-CRMMobileSDK.release.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -760,7 +819,10 @@
 				INFOPLIST_FILE = CRMMobileSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = /usr/include/libxml2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/include/libxml2,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -768,6 +830,7 @@
 		};
 		07F0B2251B4E479B00213CA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BE513B9F7DB2C8F9EBC01A0 /* Pods-CRMMobileSDK-CRMMobileSDKTests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -785,6 +848,7 @@
 		};
 		07F0B2261B4E479B00213CA1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70583899AA4DF7BB2D565D79 /* Pods-CRMMobileSDK-CRMMobileSDKTests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

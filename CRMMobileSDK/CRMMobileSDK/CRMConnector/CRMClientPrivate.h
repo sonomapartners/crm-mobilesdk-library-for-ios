@@ -3,6 +3,6 @@
 #ifndef CRMMobileSDK_CRMClientPrivate_h
 #define CRMMobileSDK_CRMClientPrivate_h
 
-#import <ADALiOS/ADAL.h>
+#import <ADAL/ADAL.h>
 
 #endif

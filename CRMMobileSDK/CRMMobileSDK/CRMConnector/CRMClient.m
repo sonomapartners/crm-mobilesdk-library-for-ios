@@ -100,16 +100,21 @@ extern NSString* const OAuth2_Authenticate_Header;
         }
         
         // This performs the authentication and the library will jump in with the login page if needed
-        [context acquireTokenWithResource:endpoint
-                                 clientId:self.clientID
-                              redirectUri:[NSURL URLWithString:self.redirectURI]
-                          completionBlock:^(ADAuthenticationResult *result) {
-                              if (result.status == AD_SUCCEEDED) {
-                                  self.accessToken = result.accessToken;
-                              }
-                              
-                              if (completion) completion(result);
-                          }];
+        // The login can occur on a background thread so it needs to dispatch to the main thread
+        // in case it needs to display the login screen
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [context acquireTokenWithResource:endpoint
+                                     clientId:self.clientID
+                                  redirectUri:[NSURL URLWithString:self.redirectURI]
+                              completionBlock:^(ADAuthenticationResult *result) {
+                                  if (result.status == AD_SUCCEEDED) {
+                                      self.accessToken = result.accessToken;
+                                  }
+                                  if (completion) {
+                                      completion(result);
+                                  }
+                              }];
+        });
     }];
     
     [authorityTask resume];
